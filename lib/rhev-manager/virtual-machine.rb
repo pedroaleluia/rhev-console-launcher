@@ -1,5 +1,5 @@
 class VirtualMachine
-  attr_accessor :id, :name, :description, :host_uuid, :state, :port, :secure_port, :address, :proxy
+  attr_accessor :id, :name, :description, :host_uuid, :state, :port, :secure_port, :address, :proxy, :smartcard_enabled
 
   def initialize(vm)
     @id = vm['id']
@@ -11,6 +11,7 @@ class VirtualMachine
     @state = vm['status']['state'] unless vm['status'].nil?
     @host_uuid = vm['host']['id'] unless vm['host'].nil?
     @proxy = vm['proxy']
+    @smartcard_enabled = vm['smartcard_enabled']
   end
 end
 
