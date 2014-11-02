@@ -129,6 +129,7 @@ class RhevManager
       @vv.puts("host-subject=#{host_subject}")
       @vv.puts("toggle-fullscreen=shift+f11")
       @vv.puts("release-cursor=shift+f12")
+      @vv.puts("proxy=#{vm.proxy}")
     ensure
       @vv.close()
     end
