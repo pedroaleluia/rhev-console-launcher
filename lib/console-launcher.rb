@@ -127,7 +127,7 @@ class RhevManager
       @vv.puts("port=#{vm.port}")
       @vv.puts("password=#{password}")
       @vv.puts("tls-port=#{vm.secure_port}")
-      @vv.puts("fullscreen=0")
+      @vv.puts("fullscreen=1")
       @vv.puts("title=vm:#{vm.name} - %d - Press SHIFT+F12 to Release Cursor")
       @vv.puts("enable-usb-autoshare=1")
       @vv.puts("usb-filter=-1,-1,-1,-1,0")
