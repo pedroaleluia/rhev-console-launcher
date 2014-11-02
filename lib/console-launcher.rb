@@ -29,12 +29,6 @@ require 'rbconfig'
 
 # This class provides utility methods to encapsulates RESTful access to the RHEV Manager.
 # Since the returned response is in XML this class transforms the XML Response into Ruby Objects.
-class String
-	def to_bool
-	return true if self == true || self =~ (/(true|t|yes|y|1)$/i)
-	return false if self == false || self.blank? || self =~ (/(false|f|no|n|0)$/i)
-	raise ArgumentError.new("invalid value for Boolean: \"#{self}\"")
-end
 
 class RhevManager
 
@@ -135,7 +129,7 @@ class RhevManager
       @vv.puts("toggle-fullscreen=shift+f11")
       @vv.puts("release-cursor=shift+f12")
       @vv.puts("proxy=#{vm.proxy}")
-      @vv.puts("enable-smartcard=#{vm.smartcard_enabled}")
+      @vv.puts("enable-smartcard=1")
     ensure
       @vv.close()
     end
