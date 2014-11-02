@@ -10,6 +10,7 @@ class VirtualMachine
     @secure_port = vm['display']['secure_port'] unless vm['display'].nil?
     @state = vm['status']['state'] unless vm['status'].nil?
     @host_uuid = vm['host']['id'] unless vm['host'].nil?
+    @proxy = vm['proxy']
   end
 end
 
