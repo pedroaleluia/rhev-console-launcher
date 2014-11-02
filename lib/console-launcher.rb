@@ -135,7 +135,7 @@ class RhevManager
       @vv.puts("toggle-fullscreen=shift+f11")
       @vv.puts("release-cursor=shift+f12")
       @vv.puts("proxy=#{vm.proxy}")
-      @vv.puts("smartcard_enabled=#{vm.smartcard_enabled}")
+      @vv.puts("enable-smartcard=#{vm.smartcard_enabled}")
     ensure
       @vv.close()
     end
