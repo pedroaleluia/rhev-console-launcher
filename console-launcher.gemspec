@@ -6,7 +6,7 @@ require 'date'
 Gem::Specification.new do |s|
   s.name        = 'console-launcher'
   s.version     = ConsoleLauncher::VERSION
-  s.date        = "2013-05-28"
+  s.date        = "2014-11-02"
   s.summary     = "RHEV-M Console Launcher"
   s.description = "This gem provides the ability to launch console sessions on Mac"
   s.authors     = ["Juergen Hoffmann", "Vinny Valdez", "Thomas Crowe"]
