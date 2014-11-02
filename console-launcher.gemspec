@@ -11,7 +11,7 @@ Gem::Specification.new do |s|
   s.description = "This gem provides the ability to launch console sessions on Mac"
   s.authors     = ["Juergen Hoffmann", "Vinny Valdez", "Thomas Crowe"]
   s.email       = ['buddy@redhat.com', 'vvaldez@redhat.com', 'tcrowe@redhat.com']
-  s.homepage    = 'https://github.com/juhoffma/rhev-console-launcher'
+  s.homepage    = 'https://github.com/pedroaleluia/rhev-console-launcher'
   s.executables = 'console-launcher'
   s.files       = ['lib/console-launcher.rb',
                    'lib/console-launcher_version.rb',
