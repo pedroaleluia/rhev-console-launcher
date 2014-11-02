@@ -1,5 +1,5 @@
 class VirtualMachine
-  attr_accessor :id, :name, :description, :host_uuid, :state, :port, :secure_port, :address
+  attr_accessor :id, :name, :description, :host_uuid, :state, :port, :secure_port, :address, :proxy
 
   def initialize(vm)
     @id = vm['id']
